@@ -3,7 +3,7 @@ pipeline {
   parameters {
     string(name: 'REPONAME', defaultValue: 'example/nginx', description: 'AWS ECR Repository Name')
     string(name: 'ECR', defaultValue: '951828601916.dkr.ecr.eu-west-2.amazonaws.com/example/nginx', description: 'AWS ECR Registry URI')
-    string(name: 'REGION', defaultValue: 'eu-west-1', description: 'AWS Region code')
+    string(name: 'REGION', defaultValue: 'eu-west-2', description: 'AWS Region code')
     string(name: 'CLUSTER', defaultValue: 'ExampleCluster', description: 'AWS ECS Cluster name')
     string(name: 'TASK', defaultValue: 'ExampleTask', description: 'AWS ECS Task name')
   }
