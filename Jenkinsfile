@@ -20,7 +20,7 @@ pipeline {
     }
     stage('TestStage') {
       steps {
-        sh "./cicd/test.sh"
+        sh "./cicd/test.sh -c ${params.CLUSTER} -t ${params.TASK}"
       }
     }
   }
