@@ -15,7 +15,7 @@ pipeline {
     }
     stage('DeployStage') {
       steps {
-        sh "./cicd/deploy.sh"
+        sh "./cicd/deploy.sh -b ${env.BUILD_ID} -e ${params.ECR} -c ${params.CLUSTER} -t ${params.TASK}"
       }
     }
     stage('TestStage') {
